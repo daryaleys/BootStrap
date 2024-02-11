@@ -1,0 +1,75 @@
+.mb-3-75 {
+    margin-bottom: 3.75rem !important;
+}
+
+@media screen and (max-width: 767px) {
+    .slick-prev, .slick-next {
+        width: 20px!important;
+        height: 20px!important;
+    }
+
+    .slick-prev:before {
+        content: url('../images/min-left-arrow.svg')!important;
+        left: 4px!important;
+        top: -4px!important;
+    }
+
+    .slick-next:before {
+        content: url('../images/min-right-arrow.svg')!important;
+        right: 4px!important;
+        top: -4px!important;
+    }
+}
+
+.slick-prev {
+    left: 15px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #076BFF;
+}
+
+.slick-prev:before {
+    content: url('../images/left-arrow.svg');
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+.slick-next:before {
+    content: url('../images/right-arrow.svg');
+    position: absolute;
+    right: 8px;
+    top: 9px;
+}
+
+.slick-prev:before, .slick-next:before {
+    opacity: 0.75;
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    opacity: 1;
+    background: white;
+}
+
+.ui-state-default .close {
+    display: none;
+}
+.ui-state-default .open {
+    display: block;
+}
+
+.ui-state-active .close {
+    display: block;
+}
+.ui-state-active .open {
+    display: none;
+}
