@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+    <link rel="stylesheet" href="styles/hover-min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Bootstrap practice</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary py-2 mb-5">
+    <div class="container-fluid px-3 py-1">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Преимущества</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 px-3 py-2 lh-1" type="search" placeholder="Поиск чая"
+                       aria-label="Search">
+                <button class="btn btn-outline-primary lh-1 py-2 w-50 hvr-pop" type="submit">Найти</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container px-2 px-xl-0">
+    <div class="container slider mb-3 mb-md-5 pt-4 px-0 wow animate__animated animate__fadeInLeft">
+        <div>
+            <img src="images/1.png" class="d-block w-100" alt="1">
+        </div>
+        <div>
+            <img src="images/2.png" class="d-block w-100" alt="2">
+        </div>
+        <div>
+            <img src="images/3.png" class="d-block w-100" alt="3">
+        </div>
+    </div>
+
+    <div class="container mb-3 mb-md-5 pt-4 px-2 wow animate__animated animate__swing">
+        <h2 class="text-center mb-5 fw-bold text-black">Наши чайные коллекции</h2>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 gy-4">
+            <div class="col">
+                <div class="card">
+                    <a class="open-image" href="images/image_1.png">
+                        <img src="images/image_1.png" class="card-img-top" alt="1">
+                    </a>
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-black">Детокс чай лайм</h5>
+                        <p class="card-text text-black">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                            расслабления</p>
+                        <a href="#" class="btn btn-primary w-50 hvr-pop">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="open-image" href="images/image_2.png">
+                        <img src="images/image_2.png" class="card-img-top" alt="2">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-black">Ягодный чай</h5>
+                        <p class="card-text text-black">Нотки ягод позволят вам расслабиться и насладиться великолепием этого
+                            чая</p>
+                        <a href="#" class="btn btn-primary w-50 hvr-pop">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="open-image" href="images/image_3.png">
+                        <img src="images/image_3.png" class="card-img-top" alt="3">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-black">Цветочный чай</h5>
+                        <p class="card-text text-black">Душистые цветы создают невероятный аромат и наполняют вас энергией</p>
+                        <a href="#" class="btn btn-primary w-50 hvr-pop">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="open-image" href="images/image_4.png">
+                        <img src="images/image_4.png" class="card-img-top" alt="4">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-black">Очищающий чай</h5>
+                        <p class="card-text text-black">Бесподобный чай для получения утреннего заряда бодрости</p>
+                        <a href="#" class="btn btn-primary w-50 hvr-pop">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="open-image" href="images/image_5.png">
+                        <img src="images/image_5.png" class="card-img-top" alt="5">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-black">Кислый чай</h5>
+                        <p class="card-text text-black">Кислый чай для настоящих ценителей кислинки во время чаепития</p>
+                        <a href="#" class="btn btn-primary w-50 hvr-pop">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a class="open-image" href="images/image_6.png">
+                        <img src="images/image_6.png" class="card-img-top" alt="6">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-black">Лимонная мята</h5>
+                        <p class="card-text text-black">Смесь лимона с мятой сделает ваш день самым лучшим</p>
+                        <a href="#" class="btn btn-primary w-50 hvr-pop">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-lg-8 mx-auto mb-3 mb-md-5 pt-4">
+        <h2 class="text-center mb-5 fw-bold text-black">Ответы на часто задаваемые вопросы</h2>
+        <div id="accordion">
+            <h3 class="d-flex justify-content-between bg-primary bg-gradient text-white p-4 rounded-3 my-3 border-0">
+                <span class="fw-bold">Собираете ли вы подарочные боксы?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="open">
+                    <g clip-path="url(#clip0_3910_43)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_43">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="close">
+                    <g clip-path="url(#clip0_3910_36)">
+                        <path d="M10.5243 4.41407L19.8238 12.8961C20.0391 13.0923 20.1651 13.3616 20.1785 13.6543C20.192 13.947 20.0912 14.2267 19.8949 14.4418L19.2704 15.1266C18.8635 15.5723 18.1702 15.6042 17.7247 15.1977L9.91555 8.07513L2.78508 15.893C2.58874 16.1081 2.31962 16.2342 2.02709 16.2477C1.73423 16.2611 1.45466 16.1602 1.23925 15.9641L0.554713 15.3394C0.339455 15.1431 0.213465 14.8739 0.200006 14.5812C0.186547 14.2885 0.287299 14.0088 0.483639 13.7937L8.97325 4.48539C9.17022 4.26977 9.44065 4.14388 9.7337 4.13106C10.0278 4.11688 10.3085 4.21743 10.5243 4.41407Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_36">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(0 -1 -1 -2.23281e-08 19.9999 19.9999)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </h3>
+            <div class="border-0 pt-0 pb-2 px-4">
+                Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+            </div>
+            <h3 class="d-flex justify-content-between bg-primary bg-gradient text-white p-4 rounded-3 my-3 border-0">
+                <span class="fw-bold">Сколько у вас разновидностей чая?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="open">
+                    <g clip-path="url(#clip0_3910_43)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_43">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="close">
+                    <g clip-path="url(#clip0_3910_36)">
+                        <path d="M10.5243 4.41407L19.8238 12.8961C20.0391 13.0923 20.1651 13.3616 20.1785 13.6543C20.192 13.947 20.0912 14.2267 19.8949 14.4418L19.2704 15.1266C18.8635 15.5723 18.1702 15.6042 17.7247 15.1977L9.91555 8.07513L2.78508 15.893C2.58874 16.1081 2.31962 16.2342 2.02709 16.2477C1.73423 16.2611 1.45466 16.1602 1.23925 15.9641L0.554713 15.3394C0.339455 15.1431 0.213465 14.8739 0.200006 14.5812C0.186547 14.2885 0.287299 14.0088 0.483639 13.7937L8.97325 4.48539C9.17022 4.26977 9.44065 4.14388 9.7337 4.13106C10.0278 4.11688 10.3085 4.21743 10.5243 4.41407Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_36">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(0 -1 -1 -2.23281e-08 19.9999 19.9999)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </h3>
+            <div class="border-0 pt-0 pb-2 px-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsam magni nesciunt obcaecati sint? Aut
+                commodi doloribus eius, molestiae omnis pariatur placeat voluptates! Enim eos fugit itaque nemo
+                repellendus sed?
+            </div>
+            <h3 class="d-flex justify-content-between bg-primary bg-gradient text-white p-4 rounded-3 my-3 border-0">
+                <span class="fw-bold">В какой срок осуществляется доставка?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="open">
+                    <g clip-path="url(#clip0_3910_43)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_43">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="close">
+                    <g clip-path="url(#clip0_3910_36)">
+                        <path d="M10.5243 4.41407L19.8238 12.8961C20.0391 13.0923 20.1651 13.3616 20.1785 13.6543C20.192 13.947 20.0912 14.2267 19.8949 14.4418L19.2704 15.1266C18.8635 15.5723 18.1702 15.6042 17.7247 15.1977L9.91555 8.07513L2.78508 15.893C2.58874 16.1081 2.31962 16.2342 2.02709 16.2477C1.73423 16.2611 1.45466 16.1602 1.23925 15.9641L0.554713 15.3394C0.339455 15.1431 0.213465 14.8739 0.200006 14.5812C0.186547 14.2885 0.287299 14.0088 0.483639 13.7937L8.97325 4.48539C9.17022 4.26977 9.44065 4.14388 9.7337 4.13106C10.0278 4.11688 10.3085 4.21743 10.5243 4.41407Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_36">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(0 -1 -1 -2.23281e-08 19.9999 19.9999)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </h3>
+            <div class="border-0 pt-0 pb-2 px-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque expedita id nesciunt perferendis
+                qui quidem repudiandae, similique! Aperiam autem consectetur, culpa illum libero maiores, nostrum
+                reprehenderit suscipit, temporibus vel voluptate.
+            </div>
+            <h3 class="d-flex justify-content-between bg-primary bg-gradient text-white p-4 rounded-3 my-3 border-0">
+                <span class="fw-bold">У вас обновляется ассортимент?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="open">
+                    <g clip-path="url(#clip0_3910_43)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_43">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="close">
+                    <g clip-path="url(#clip0_3910_36)">
+                        <path d="M10.5243 4.41407L19.8238 12.8961C20.0391 13.0923 20.1651 13.3616 20.1785 13.6543C20.192 13.947 20.0912 14.2267 19.8949 14.4418L19.2704 15.1266C18.8635 15.5723 18.1702 15.6042 17.7247 15.1977L9.91555 8.07513L2.78508 15.893C2.58874 16.1081 2.31962 16.2342 2.02709 16.2477C1.73423 16.2611 1.45466 16.1602 1.23925 15.9641L0.554713 15.3394C0.339455 15.1431 0.213465 14.8739 0.200006 14.5812C0.186547 14.2885 0.287299 14.0088 0.483639 13.7937L8.97325 4.48539C9.17022 4.26977 9.44065 4.14388 9.7337 4.13106C10.0278 4.11688 10.3085 4.21743 10.5243 4.41407Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_36">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(0 -1 -1 -2.23281e-08 19.9999 19.9999)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </h3>
+            <div class="border-0 pt-0 pb-2 px-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam asperiores at aut eaque,
+                fugiat illo nam quaerat sunt, ullam unde voluptas. Eligendi incidunt, porro ratione soluta vel
+                vitae?
+            </div>
+            <h3 class="d-flex justify-content-between bg-primary bg-gradient text-white p-4 rounded-3 my-3 border-0">
+                <span class="fw-bold">Какого объема у вас пачки чая?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="open">
+                    <g clip-path="url(#clip0_3910_43)">
+                        <path d="M9.2196 15.5559L0.31951 6.65567C0.113495 6.44982 -6.91001e-08 6.17502 -5.92231e-08 5.88202C-4.93462e-08 5.58901 0.113495 5.31422 0.31951 5.10837L0.974789 4.45292C1.40178 4.02642 2.09576 4.02642 2.52209 4.45292L9.99585 11.9267L17.4779 4.44463C17.6839 4.23878 17.9586 4.12512 18.2514 4.12512C18.5446 4.12512 18.8192 4.23878 19.0254 4.44463L19.6805 5.10007C19.8865 5.30609 20 5.58072 20 5.87373C20 6.16673 19.8865 6.44153 19.6805 6.64738L10.7723 15.5559C10.5656 15.7623 10.2897 15.8756 9.99634 15.8749C9.70187 15.8756 9.4261 15.7623 9.2196 15.5559Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_43">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(-3.3709e-08 1 1 5.66818e-08 0 0)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     class="close">
+                    <g clip-path="url(#clip0_3910_36)">
+                        <path d="M10.5243 4.41407L19.8238 12.8961C20.0391 13.0923 20.1651 13.3616 20.1785 13.6543C20.192 13.947 20.0912 14.2267 19.8949 14.4418L19.2704 15.1266C18.8635 15.5723 18.1702 15.6042 17.7247 15.1977L9.91555 8.07513L2.78508 15.893C2.58874 16.1081 2.31962 16.2342 2.02709 16.2477C1.73423 16.2611 1.45466 16.1602 1.23925 15.9641L0.554713 15.3394C0.339455 15.1431 0.213465 14.8739 0.200006 14.5812C0.186547 14.2885 0.287299 14.0088 0.483639 13.7937L8.97325 4.48539C9.17022 4.26977 9.44065 4.14388 9.7337 4.13106C10.0278 4.11688 10.3085 4.21743 10.5243 4.41407Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3910_36">
+                            <rect width="20" height="20" fill="white"
+                                  transform="matrix(0 -1 -1 -2.23281e-08 19.9999 19.9999)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </h3>
+            <div class="border-0 pt-0 pb-2 px-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias nobis quaerat rem sed.
+                Nostrum, quos, vero! Amet atque consequuntur cum, dolorum error explicabo illo inventore ipsa
+                nostrum, quibusdam totam?
+            </div>
+        </div>
+    </div>
+
+    <div class="container form-container col-lg-6 mx-auto mb-3 mb-md-5 pt-4 wow animate__animated animate__backInLeft">
+        <h2 class="text-center mb-5 fw-bold text-black">Сделать заказ</h2>
+
+        <form id="form" class="row g-3 mt-2">
+            <div class="col-12 col-md-6 col-lg-4">
+                <label for="first-name" class="form-label text-black">Имя</label>
+                <input id="first-name" type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <label for="last-name" class="form-label text-black">Фамилия</label>
+                <input id="last-name" type="text" class="form-control">
+            </div>
+            <div class="col-12 col-lg-4">
+                <label for="phone" class="form-label text-black">Телефон</label>
+                <input id="phone" type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="country" class="form-label text-black">Страна</label>
+                <input id="country" type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="index" class="form-label text-black">Индекс</label>
+                <input data-inputmask="'mask': '9', 'repeat': 6" id="index" type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                <label for="address" class="form-label text-black">Адрес</label>
+                <input id="address" type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                <button id="create-order" type="button" class="btn btn-primary w-100 hvr-pop">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="bg-body-tertiary p-3">
+    <div class="container-fluid py-1 px-0 text-black" style="--bs-text-opacity: .6;">
+        Все права защищены
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="scripts/jquery.inputmask.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
